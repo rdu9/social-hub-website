@@ -143,10 +143,12 @@ html, body {
       box-shadow: 0 0 2.5px #ffffff;
     animation: slide 2s forwards;
     filter: grayscale(100%);
-    transition: filter 0.5s ease;
+    backdrop-filter: blur(6px);
+    transition: filter backdrop-filter 0.5s ease;
   }
 .border:hover {
   filter: grayscale(0%);
+  backdrop-filter: blur(6px);
 }
 
 
